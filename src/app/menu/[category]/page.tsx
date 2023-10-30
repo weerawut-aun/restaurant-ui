@@ -7,6 +7,7 @@ const getData = async (category: string) => {
   const res = await fetch(
     `http://localhost:3000/api/products?cat=${category}`,
     {
+      method: "GET",
       cache: "no-store",
     }
   );
